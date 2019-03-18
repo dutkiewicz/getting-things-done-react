@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/getting-things-done-react/precache-manifest.42925e848391dac52d71005902198997.js"
+  "/getting-things-done-react/precache-manifest.cef715df82226d03494417f5a06aa1d9.js"
 );
 
 workbox.clientsClaim();
