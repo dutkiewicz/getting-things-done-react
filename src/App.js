@@ -1,6 +1,12 @@
 import React from 'react';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import 'jquery/dist/jquery'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPlus, faTrashAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import './App.css'
 import TaskList from './components/TaskList'
 
 library.add(faPlus, faTrashAlt, faCheckCircle)
@@ -57,7 +63,7 @@ class App extends React.Component {
     
     return (
       <main className="content boxed">
-        <div className="row">
+        <div className="row app">
           {tasks.map(task => <TaskList 
             key={task.id}
             title={task.title} 

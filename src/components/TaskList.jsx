@@ -25,7 +25,7 @@ class TaskList extends React.Component {
         }
 
         return (
-            <div className="col-md-6 col-sm-12 mb-3">
+            <div className="col-md-6 col-12 mb-3">
                 <div className="card">
                     <h4 className={this.renderHeaderColor()}>{this.props.title}</h4>
                     
@@ -35,10 +35,10 @@ class TaskList extends React.Component {
                         </ul>
                         <form onSubmit={e => addTask(e)}>
                             <div className="form-row">
-                                <div className="col-md-10 col-xs-12">
+                                <div className="col-md-10 col-12">
                                     <input type="text" className="form-control" name="task" value={this.state.taskValue} onChange={this.handleChange} />
                                 </div>
-                                <div className="col-md-2 col-xs-12">
+                                <div className="col-md-2 col-12">
                                     <button className="btn btn-outline-success form-control"><FontAwesomeIcon icon="plus" /> add</button>
                                 </div>
                             </div>
